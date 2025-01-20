@@ -1,4 +1,4 @@
-def count_variatons(self, nums: [int]) -> int:
+def count_variatons(nums: [int]) -> int:
     pairs_tuple = tuple(x * y for i, x in enumerate(nums) for y in nums[i + 1:])
     pairs_dict = {}
     result = 0
